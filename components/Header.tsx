@@ -1,18 +1,14 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, AppBar } from "@mui/material";
 import React from "react";
 import { Item } from "./custom/styledComponents";
-import HeadContact from "./HeadContact";
 
-const menu = ["Главная", "Каталог", "О нас", "Контакты"];
+const menu = ["Главная", "Галерея", "О нас", "Контакты"];
 
 function Header() {
   return (
-    <>
-      <HeadContact />
-      <Grid
-        container
-        alignContent="center"
-        sx={{ height: 50, background: "transparent", position: "sticky", top: 0, zIndex: 1 }}>
+    <AppBar
+      sx={{ background: "transparent", backdropFilter: "blur(8px)", height: { xs: 60, sm: 80 } }}>
+      <Grid container alignContent="center" height={1}>
         {menu.map((item) => (
           <Grid item xs={3} key={item}>
             <Item>
@@ -23,7 +19,7 @@ function Header() {
           </Grid>
         ))}
       </Grid>
-    </>
+    </AppBar>
   );
 }
 

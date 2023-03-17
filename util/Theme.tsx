@@ -29,18 +29,20 @@ export const theme = () => {
     typography: {
       body1: {
         fontSize: 16,
-        fontFamily: "Roboto"
+        fontFamily: "Roboto",
+        color: "#FFF"
       },
       body2: {
         fontSize: 18,
         fontFamily: "Space Grotesk,sans-serif",
-        color: "white",
+        color: "#FFF",
         cursor: "pointer"
       },
       subtitle1: {
         fontSize: 24,
         fontFamily: "Acadian",
-        lineHeight: 1.2
+        lineHeight: 1.2,
+        color: "#FFF"
       },
       subtitle2: {
         fontSize: 180,
