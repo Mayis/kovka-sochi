@@ -1,7 +1,7 @@
 import React from "react";
 
 // components
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import { Item } from "./custom/styledComponents";
 
 //icons
@@ -14,31 +14,45 @@ const welcomeTxt = {
 function WelcomeText() {
   const { best, work } = welcomeTxt;
   return (
-    <Grid container height={{ xs: "70vh", md: "80vh" }} alignItems={"center"}>
-      <Grid item container xs={12} spacing={10}>
+    <Grid
+      container
+      height={1}
+      justifyContent={"center"}
+      alignItems={"center"}
+      pt={{ xs: 8, sm: 10 }}>
+      <Grid
+        item
+        container
+        p={{ xs: 4, sm: 8 }}
+        width={{ xs: "90%", sm: "80%" }}
+        sx={{ background: "rgb(0 0 0 / 70%)", borderRadius: 8 }}>
         <Grid item xs={12}>
-          <Item sx={{ flexDirection: "column" }}>
+          <Item>
             <Typography
               color="secondary"
               variant="subtitle2"
-              sx={{ fontSize: { xs: 60, sm: 100, md: 120, lg: 180 } }}>
+              sx={{ fontSize: { xs: 50, sm: 80, md: 100, lg: 180 } }}>
               {best}
-            </Typography>
-            <Typography
-              color="secondary"
-              variant="h1"
-              sx={{ fontSize: { xs: 25, sm: 30, md: 50 } }}>
-              {work}
             </Typography>
           </Item>
         </Grid>
         <Grid item xs={12}>
           <Item>
+            <Typography
+              color="secondary"
+              variant="h1"
+              sx={{ fontSize: { xs: 23, sm: 30, md: 50 } }}>
+              {work}
+            </Typography>
+          </Item>
+        </Grid>
+        <Grid item xs={12} pt={8}>
+          <Item>
             <Button
               startIcon={<PlaceIcon />}
               variant="contained"
               sx={{
-                width: { xs: 150, sm: 200, md: 300 },
+                width: { xs: 200, sm: 230, md: 300 },
                 height: { xs: 50, sm: 80 },
                 fontSize: { xs: 12, sm: 18 },
                 fontFamily: "Jura, sans-serif"

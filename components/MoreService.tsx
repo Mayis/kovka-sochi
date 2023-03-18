@@ -15,7 +15,8 @@ function MoreService() {
     <Grid
       container
       justifyContent="center"
-      p={3}
+      pt={5}
+      pb={5}
       rowSpacing={2}
       sx={{ background: "rgb(128 128 128 / 12%)" }}>
       <Grid item xs={10} sm={9}>
@@ -35,7 +36,7 @@ function MoreService() {
             <Grid container>
               <Grid item xs={12} sm={6} md={3} p={2}>
                 <Item sx={{ flexDirection: "column" }}>
-                  <Icon color="primary" sx={{ height: 60, width: 60, padding: 1 }}>
+                  <Icon color="secondary" sx={{ height: 60, width: 60, padding: 1 }}>
                     <RecomendationIcon sx={{ fontSize: 60 }} />
                   </Icon>
                   <Typography color="#FFF" sx={{ fontSize: 20 }}>
@@ -45,7 +46,7 @@ function MoreService() {
               </Grid>
               <Grid item xs={12} sm={6} md={3} p={2}>
                 <Item sx={{ flexDirection: "column" }}>
-                  <Icon color="primary" sx={{ height: 60, width: 60, padding: 1 }}>
+                  <Icon color="secondary" sx={{ height: 60, width: 60, padding: 1 }}>
                     <ArchitectureIcon sx={{ fontSize: 60 }} />
                   </Icon>
                   <Typography color="#FFF" sx={{ fontSize: 20 }}>
@@ -55,7 +56,7 @@ function MoreService() {
               </Grid>
               <Grid item xs={12} sm={6} md={3} p={2}>
                 <Item sx={{ flexDirection: "column" }}>
-                  <Icon color="primary" sx={{ height: 60, width: 60, padding: 1 }}>
+                  <Icon color="secondary" sx={{ height: 60, width: 60, padding: 1 }}>
                     <LocalShippingIcon sx={{ fontSize: 60 }} />
                   </Icon>
                   <Typography color="#FFF" sx={{ fontSize: 20 }}>
@@ -65,7 +66,7 @@ function MoreService() {
               </Grid>
               <Grid item xs={12} sm={6} md={3} p={2}>
                 <Item sx={{ flexDirection: "column" }}>
-                  <Icon color="primary" sx={{ height: 60, width: 60, padding: 1 }}>
+                  <Icon color="secondary" sx={{ height: 60, width: 60, padding: 1 }}>
                     <SettingsIcon sx={{ fontSize: 60 }} />
                   </Icon>
                   <Typography color="#FFF" sx={{ fontSize: 20 }}>
