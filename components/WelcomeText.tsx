@@ -1,4 +1,5 @@
 import React from "react";
+import { scroller } from "react-scroll";
 
 // components
 import { Button, Grid, Typography } from "@mui/material";
@@ -13,6 +14,14 @@ const welcomeTxt = {
 };
 function WelcomeText() {
   const { best, work } = welcomeTxt;
+  const handleContact = () => {
+    scroller.scrollTo("Контакты", {
+      duration: 1000,
+      delay: 100,
+      smooth: true,
+      offset: -100
+    });
+  };
   return (
     <Grid
       container
@@ -49,6 +58,7 @@ function WelcomeText() {
         <Grid item xs={12} pt={8}>
           <Item>
             <Button
+              onClick={handleContact}
               startIcon={<PlaceIcon />}
               variant="contained"
               sx={{
@@ -57,7 +67,7 @@ function WelcomeText() {
                 fontSize: { xs: 12, sm: 18 },
                 fontFamily: "Jura, sans-serif"
               }}>
-              get in touch
+              Связываться с нами
             </Button>
           </Item>
         </Grid>
